@@ -1,4 +1,4 @@
-#Load balancing: nginx and Consul Template
+#Load balancing: HAProxy and Consul Template
 [HAProxy](http://www.haproxy.org/) dynamic reload whenever an upstream server is up or down. Based on [official HAProxy image](https://registry.hub.docker.com/_/haproxy/).
 
 ##Prerequisite

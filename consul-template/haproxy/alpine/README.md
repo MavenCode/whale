@@ -1,4 +1,4 @@
-#Load balancing: nginx and Consul Template
+#Load balancing: HAProxy and Consul Template
 [HAProxy](http://www.haproxy.org/) dynamic reload whenever an upstream server is up or down. A minimal container based on [Alpine Linux](https://www.alpinelinux.org/).
 
 ##Prerequisite
