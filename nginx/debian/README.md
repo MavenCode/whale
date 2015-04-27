@@ -10,8 +10,4 @@ $ docker-compose up
 ```
 
 ##Configuration
-Make your configurations in `nginx.conf`. If you screw up the configurations and wish to start over:
-
-```console
-$ cp nginx.conf.default nginx.conf
-```
+Make your configurations in `nginx.conf`.
