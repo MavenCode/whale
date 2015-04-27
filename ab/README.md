@@ -13,4 +13,4 @@ Or use [Compose](https://github.com/docker/compose):
 ```console
 $ docker-compose up
 ```
-Remember to change the necessary parameters if using Compose.
+Remember to change the necessary parameters in `docker-compose.yml` if using Compose.
