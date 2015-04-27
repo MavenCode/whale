@@ -6,7 +6,7 @@ Simple bash script and `docker-compose.yml` to easily run a [Consul](https://www
 If using the bash script `up.sh`:
 
 ```console
-$ bash up.sh 1.2.3.4 hostname
+$ bash up.sh hostname 1.2.3.4
 ```
 where `1.2.3.4` is the docker host IP address and `hostname` can be arbitrary.
 
