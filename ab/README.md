@@ -1,6 +1,6 @@
 ab
 
-Dokerized ApacheBench.
+Dockerized [ApacheBench](http://httpd.apache.org/docs/2.4/programs/ab.html).
 
 ###Usage
 See bensh.sh for sample usage. Example:
