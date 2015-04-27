@@ -1,6 +1,6 @@
 #consul
 
-Simple bash script and `docker-compose.yml` to easily run a [Consul]((https://www.consul.io/)) server based on [progrium/consul](https://github.com/progrium/docker-consul).
+Simple bash script and `docker-compose.yml` to easily run a [Consul](https://www.consul.io/) server based on [progrium/consul](https://github.com/progrium/docker-consul).
 
 ##Usage
 If using the bash script `up.sh`:
