@@ -1,5 +1,5 @@
 #Load balancing: nginx and Consul Template
-[nginx](http://nginx.org/en/) dynamic reload whenever an upstream server is up or down. Based on [official nginx image](https://registry.hub.docker.com/_/nginx/).
+[nginx](http://nginx.org/en/) dynamic reload whenever an upstream server is up or down. Based on [official](https://registry.hub.docker.com/_/nginx/) nginx image.
 
 ##Prerequisite
 A [Consul](https://www.consul.io/) server and [Registrator](https://github.com/gliderlabs/registrator).
