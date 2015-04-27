@@ -1,5 +1,5 @@
 #Load balancing: HAProxy and Consul Template
-[HAProxy](http://www.haproxy.org/) dynamic reload whenever an upstream server is up or down. Based on [official HAProxy image](https://registry.hub.docker.com/_/haproxy/).
+[HAProxy](http://www.haproxy.org/) dynamic reload whenever an upstream server is up or down. Based on [official](https://registry.hub.docker.com/_/haproxy/) HAProxy image.
 
 ##Prerequisite
 A [Consul](https://www.consul.io/) server and [Registrator](https://github.com/gliderlabs/registrator).
