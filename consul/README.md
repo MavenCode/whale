@@ -8,6 +8,7 @@ If using the bash script `up.sh`:
 ```console
 $ bash up.sh 1.2.3.4 myhostname
 ```
+where `1.2.3.4` is the docker host IP address and `myhostname` can be arbitrary.
 
 If using [Compose]():
 
