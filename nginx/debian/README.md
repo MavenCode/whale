@@ -1,4 +1,4 @@
-#Docker nginx
+#nginx
 
 Dockerized [nginx](http://nginx.org/en/) (Mainline) using [official](https://registry.hub.docker.com/_/nginx/) image.
 
