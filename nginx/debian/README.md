@@ -3,7 +3,7 @@
 Dockerized [nginx](http://nginx.org/en/) (Mainline) using [official](https://registry.hub.docker.com/_/nginx/) image.
 
 ##Usage
-Using Compose:
+Using [Compose](https://github.com/docker/compose):
 
 ```console
 $ docker-compose up
