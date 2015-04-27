@@ -1,13 +1,13 @@
-#Docker ApacheBench
+ab
 
-Containerized ApacheBench.
+Dokerized ApacheBench.
 
 ###Usage
 See bensh.sh for sample usage. Example:
 ``` 
 $ bash bench.sh http://www.example.com/
 ```
-Or use Compose:
+Or use [Compose](https://github.com/docker/compose):
 ```
 $ docker-compose up
 ```
