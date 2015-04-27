@@ -3,7 +3,7 @@
 Dockerized [ApacheBench](http://httpd.apache.org/docs/2.4/programs/ab.html).
 
 ###Usage
-See bensh.sh for sample usage. Example:
+See `bensh.sh` for sample usage. Example:
 ``` 
 $ bash bench.sh http://www.example.com/
 ```
