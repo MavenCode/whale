@@ -32,7 +32,6 @@ ENV JAVA_HOME /opt/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR}
 ENV PATH $PATH:$JAVA_HOME/bin
 
 # cleanup and remove no longer needed stuff
-RUN apk del curl ca-certificates
-RUN rm -rf /var/cache/apk/*
+RUN apk del curl ca-certificates && rm -rf /var/cache/apk/*
 
-CMD []
+CMD ["java", "-version"]
