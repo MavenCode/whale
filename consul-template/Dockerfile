@@ -5,7 +5,6 @@ MAINTAINER Jimmy Ong <gnoymmij@gmail.com>
 RUN apk -U upgrade
 RUN apk add curl
 
-# specify consul-template version
 ENV CT_VERSION 0.8.0
 ENV CT consul-template_${CT_VERSION}_linux_amd64
 
