@@ -9,4 +9,4 @@ fi
 export PID=/var/run/haproxy.pid
 
 # start consul-template, in turn will start/reload haproxy on event
-$CT_HOME/consul-template -consul $CONSUL_HOST:8500 -template "/tmp/haproxy.ctmpl:$HAP_HOME/haproxy.cfg:/tmp/reload.sh"
+consul-template -consul $CONSUL_HOST:8500 -template "/tmp/haproxy.ctmpl:$HAP_HOME/haproxy.cfg:/tmp/reload.sh"

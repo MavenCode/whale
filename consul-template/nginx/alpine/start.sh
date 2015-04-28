@@ -9,4 +9,4 @@ fi
 nginx
 
 # start consul-template
-$CT_HOME/consul-template -consul $CONSUL_HOST:8500 -template "/tmp/nginx.ctmpl:/etc/nginx/nginx.conf:nginx -s reload"
+consul-template -consul $CONSUL_HOST:8500 -template "/tmp/nginx.ctmpl:/etc/nginx/nginx.conf:nginx -s reload"
