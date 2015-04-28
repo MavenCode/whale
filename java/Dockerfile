@@ -16,7 +16,7 @@ RUN cd /tmp \
 	&& curl -O $GLIBC_URL/$GLIBC_BIN \
 	&& apk add --allow-untrusted $GLIBC $GLIBC_BIN \
 	&& /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib \
-	&& rm glibc*
+	&& rm glibc* && unset GLIBC GLIBC_BIN GLIBC_URL
 
 ENV JAVA_VERSION_MAJOR 8
 ENV JAVA_VERSION_MINOR 45
@@ -32,5 +32,8 @@ ENV PATH $PATH:$JAVA_HOME/bin
 
 # cleanup and remove no longer needed stuff
 RUN apk del curl ca-certificates && rm -rf /var/cache/apk/*
+
+# unset environment variables
+RUN unset GLIBC GLIBC_BIN GLIBC_URL
 
 CMD ["java", "-version"]
