@@ -13,9 +13,8 @@ ENV GLIBC_BIN glibc-bin-2.21-r2.apk
 # download and install required x86_64 glibc binaries
 RUN cd /tmp \
 	&& curl -O $GLIBC_URL/$GLIBC \
-	&& apk add --allow-untrusted $GLIBC \
 	&& curl -O $GLIBC_URL/$GLIBC_BIN \
-	&& apk add --allow-untrusted $GLIBC_BIN \
+	&& apk add --allow-untrusted $GLIBC $GLIBC_BIN \
 	&& /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib \
 	&& rm glibc*
 
