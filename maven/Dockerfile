@@ -1,4 +1,4 @@
-FROM jimmy/java
+FROM gnoymmij/java
 
 MAINTAINER Jimmy Ong <gnoymmij@gmail.com>
 
