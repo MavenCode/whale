@@ -1,9 +1,9 @@
-#java
+# java
 [Oracle Server JRE](http://www.oracle.com/technetwork/java/javase/overview/index.html) in [Alpine Linux](https://www.alpinelinux.org/), taking references from:
 - https://github.com/gliderlabs/docker-alpine/issues/11
 - https://github.com/jeanblanchard/docker-busybox-java/blob/master/Dockerfile
 
-##Usage
+## Usage
 1. Build this Dockerfile:
 
 ```console
