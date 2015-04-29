@@ -10,7 +10,7 @@ This image uses Jean Blanchard's [busybox-java](https://github.com/jeanblanchard
 
 ```console
 $ # build the maven project first:
-$ docker run --rm -v $PWD:/maven gnoymmij/maven mvn package
+$ mvn package
 
 $ # then build this image:
 $ docker build -t gnoymmij/simple-webapp .
