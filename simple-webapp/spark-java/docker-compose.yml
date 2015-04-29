@@ -1,0 +1,7 @@
+app:
+  build: .
+  environment:
+   SERVICE_NAME: simple-webapp
+   SERVICE_TAGS: testing
+  ports:
+   - "4567:4567"
