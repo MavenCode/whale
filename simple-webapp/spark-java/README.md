@@ -17,10 +17,7 @@ $ docker build -t gnoymmij/simple-webapp .
 
 $ # run it:
 $ docker run -dp 4567:4567 gnoymmij/simple-webapp
-```
 
-Or if using [Compose](https://github.com/docker/compose):
-```console
+$ # or use Compose:
 $ docker-compose up
 ```
-
