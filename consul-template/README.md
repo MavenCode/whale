@@ -10,4 +10,4 @@ Dockerized [Consul Template](https://github.com/hashicorp/consul-template) in [A
 $ docker build -t gnoymmij/consul-template .
 ```
 
-2. Then use this image in your Dockerfile. You may use this [Dockerfile](https://github.com/gnoymmij/whale/tree/master/consul-template/nginx/alpine) as reference.
+2. Then use this image in your Dockerfile. You may use this [Dockerfile](https://github.com/gnoymmij/whale/blob/master/consul-template/nginx/alpine/Dockerfile) as reference.
