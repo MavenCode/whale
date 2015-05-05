@@ -8,7 +8,7 @@ ENV KBN kibana-$VERSION
 RUN apk -U add nginx curl
 
 RUN cd /tmp && curl -L https://download.elastic.co/kibana/kibana/$KBN.tar.gz | tar -xzf - \
-    && cd /tmp/$KBN && cp -r * /usr/html \
+    && cp -r $KBN/* /usr/html \
     && rm -rf /tmp/*
 
 RUN apk del curl && rm -rf /var/cache/apk/*
