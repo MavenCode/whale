@@ -4,13 +4,13 @@
 - https://github.com/jeanblanchard/docker-busybox-java/blob/master/Dockerfile
 
 ## Usage
-1. Build this Dockerfile:
+Build this Dockerfile:
 
 ```console
 $ docker build -t gnoymmij/java .
 ```
 
-2. Then use this image in your Dockerfile. Example:
+Then use this image in your Dockerfile. Example:
 
 ```console
 FROM gnoymmij/java
