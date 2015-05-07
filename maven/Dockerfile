@@ -11,6 +11,10 @@ RUN apk del curl && rm -rf /var/cache/apk/*
 ENV M3_HOME /opt/apache-maven-$M3_VERSION
 ENV PATH=$PATH:$M3_HOME/bin
 
+# set default repository path
+RUN mkdir /repo && sed -i '/<\/settings>/i \  <localRepository>/repo</localRepository>' $M3_HOME/conf/settings.xml
+
+VOLUME /repo
 WORKDIR /maven
 
 CMD ["mvn", "-version"]
