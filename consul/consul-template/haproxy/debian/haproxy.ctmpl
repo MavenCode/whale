@@ -1,0 +1,19 @@
+global
+	daemon
+    maxconn 1024
+    pidfile  /var/run/haproxy.pid
+
+defaults
+    mode http
+    timeout connect 5s
+	timeout client 50s
+	timeout server 50s
+	balance  leastconn
+
+frontend http
+	bind *:80
+	default_backend servers-http
+
+backend servers-http
+	{{range service "staging.app"}}server {{.Node}}{{.Port}} {{.Address}}:{{.Port}}
+	{{else}}server dummy 127.0.0.1:65535 # force a 502{{end}}
