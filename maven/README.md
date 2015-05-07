@@ -1,6 +1,6 @@
 # maven
 
-Dokerized [Apache Maven](https://maven.apache.org/) in [Alpine Linux](https://www.alpinelinux.org/), inspired by the [official image](https://registry.hub.docker.com/_/maven/).
+Dockerized [Apache Maven](https://maven.apache.org/) in [Alpine Linux](https://www.alpinelinux.org/), inspired by the [official image](https://registry.hub.docker.com/_/maven/).
 
 ## Prerequisite
 
