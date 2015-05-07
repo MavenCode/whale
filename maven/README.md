@@ -24,7 +24,7 @@ $ docker build -t mvnrepo-container .
 $ docker run --name mvnrepo mvnrepo-container
 ```
 
-Using the volumes-from flag, build a Java Maven project:
+Using the `volumes-from` flag, build a Java Maven project:
 ```console
 $ docker run --rm -ti --volumes-from mvnrepo -v /path/to/src/:maven gnoymmij/maven mvn package
 ```
