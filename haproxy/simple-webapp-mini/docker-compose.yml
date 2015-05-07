@@ -1,0 +1,7 @@
+app:
+  build: .
+  environment:
+   SERVICE_NAME: app
+   SERVICE_TAGS: staging
+  ports:
+   - "4567"

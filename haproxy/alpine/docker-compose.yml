@@ -1,0 +1,9 @@
+web:
+ build: ../simple-webapp-mini
+
+haproxy:
+ build: .
+ links:
+  - web
+ ports:
+  - "80:80"
