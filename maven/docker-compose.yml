@@ -1,0 +1,13 @@
+repo:
+ image: busybox
+ volumes: 
+  - /repo
+ 
+maven:
+ build: .
+ volumes_from:
+  - repo
+ volumes:
+  - /path/to/src:/maven
+ command: mvn package
+   
