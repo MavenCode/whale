@@ -8,6 +8,5 @@ maven:
  volumes_from:
   - repo
  volumes:
-  - /path/to/src:/maven
+     - /path/to/src:/maven
  command: mvn package
-   
