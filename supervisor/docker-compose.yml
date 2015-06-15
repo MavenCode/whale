@@ -4,4 +4,4 @@ app:
    SERVICE_NAME: app
    SERVICE_TAGS: staging
   ports:
-   - "4567"
+   - "4567:4567"

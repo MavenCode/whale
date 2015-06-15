@@ -6,8 +6,8 @@ usage="Usage: $0 url"
 [ $# -eq 0 ] && { echo $usage; exit 1; }
 
 export BENCH_HOST=$1
-export REQUESTS=5000
-export CONCURRENCY=100
+export REQUESTS=10000
+export CONCURRENCY=1000
 
 docker build -t jimmy/ab .
 docker run --rm jimmy/ab ab -k -n $REQUESTS -c $CONCURRENCY $BENCH_HOST
