@@ -17,7 +17,7 @@ RUN cd $CT_HOME \
 
 # prepare nginx related stuff
 RUN rm -v /etc/nginx/conf.d/* && rm -r /usr/share/nginx/html
-#COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY ./default.ctmpl /tmp/default.ctmpl
 
 # add start script

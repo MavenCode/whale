@@ -1,7 +1,7 @@
 nginx:
   build: .
   environment:
-   SERVICE_NAME: nginx lb
+   SERVICE_NAME: nginx-lb
    SERVICE_TAGS: staging
    CONSUL_HOST: 192.168.1.107
   ports:
