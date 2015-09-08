@@ -4,13 +4,12 @@ consul:
   - "8400:8400"
   - "8500:8500"
   - "8600:53/udp"
-  command: -server -bootstrap -advertise 192.168.1.107 -ui-dir /ui
+  command: -server -bootstrap -advertise 10.217.166.125 -ui-dir /ui
 
 registrator:
-  image: gliderlabs/registrator
+  image: gliderlabs/registrator:v5
   links:
   - consul
   volumes:
   - /var/run/docker.sock:/tmp/docker.sock
   command: consul://consul:8500
-
