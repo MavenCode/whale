@@ -1,11 +1,11 @@
-FROM gnoymmij/java
+FROM java
 
 MAINTAINER jimmy ong
 
 # install Supervisor to manage the spark app process
-RUN apk -U add supervisor
+#RUN apk -U add supervisor
+RUN apt-get update && apt-get -y install supervisor
 RUN mkdir -p /var/log
-
 # add a configuration file for Supervisor
 COPY supervisord.conf /etc/supervisord.conf
 

@@ -3,6 +3,6 @@ nginx:
   environment:
    SERVICE_NAME: nginx-lb
    SERVICE_TAGS: staging
-   CONSUL_HOST: 192.168.1.107
+   CONSUL_HOST: 192.168.1.100
   ports:
    - "80:80"
