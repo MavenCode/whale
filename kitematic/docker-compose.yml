@@ -1,0 +1,10 @@
+kitematic:
+  image: jonadev95/kitematic-docker
+  net: "host"
+  environment:
+    DISPLAY: $DISPLAY
+  volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    - $HOME/.Xauthority:/root/.Xauthority
+    - /var/run/docker.sock:/var/run/docker.sock
+  privileged: true

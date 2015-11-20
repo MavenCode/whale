@@ -14,4 +14,8 @@ RUN cd /tmp \
 
 RUN apk del openssl && rm -rf /var/cache/apk/*
 
-CMD ["vault"]
+COPY vault.hcl /tmp/vault.hcl
+
+EXPOSE 8200
+
+CMD vault server -config=/tmp/vault.hcl
